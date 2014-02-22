@@ -9,13 +9,13 @@ portfolioApp.config([
   function($routeProvider) {
     $routeProvider.
     when('/', {
-      templateUrl: 'app/partials/home.html'
+      templateUrl: 'partials/home.html'
     }).
     when('/about', {
-      templateUrl: 'app/partials/about.html'
+      templateUrl: 'partials/about.html'
     }).
     when('/portfolio', {
-      templateUrl: 'app/partials/portfolio.html'
+      templateUrl: 'partials/portfolio.html'
     }).
     otherwise({redirectTo: '/'});
   }]);
