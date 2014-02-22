@@ -1,8 +1,7 @@
 'use strict';
 
 var portfolioApp = angular.module('portfolioApp', [
-  'ngRoute',
-  'portfolioControllers'
+  'ngRoute'
   ]);
 
 portfolioApp.config([
@@ -10,16 +9,13 @@ portfolioApp.config([
   function($routeProvider) {
     $routeProvider.
     when('/', {
-      templateUrl: 'app/partials/home.html',
-      controller: 'HomeCtrl'
+      templateUrl: 'app/partials/home.html'
     }).
     when('/about', {
-      templateUrl: 'app/partials/about.html',
-      controller: 'AboutCtrl'
+      templateUrl: 'app/partials/about.html'
     }).
     when('/portfolio', {
-      templateUrl: 'app/partials/portfolio.html',
-      controller: 'MyPortfolioCtrl'
+      templateUrl: 'app/partials/portfolio.html'
     }).
     otherwise({redirectTo: '/'});
   }]);
