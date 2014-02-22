@@ -14,8 +14,8 @@ portfolioApp.config([
     when('/about', {
       templateUrl: 'partials/about.html'
     }).
-    when('/portfolio', {
-      templateUrl: 'partials/portfolio.html'
+    when('/projects', {
+      templateUrl: 'partials/projects.html'
     }).
     otherwise({redirectTo: '/'});
   }]);
