@@ -3,7 +3,10 @@
   <div class="projects">
     <ul>
       <li>game of life
-        <div class="hidden"><img src="img/gol.gif"></div>
+        <div class="hidden project_spot">
+          <img src="img/gol.gif"/>
+          <img src="img/gol_code.png"/>
+        </div>
       </li>
       <li><a href="http://dry-garden-7312.herokuapp.com/" target="_blank">playlister</a></li>
       <div class="hidden"></div>
@@ -21,7 +24,7 @@
 <script type="text/javascript">
   $(document).ready( function() {
     $("li").on("click", function() {
-      $(this).find("div").slideToggle("slow", function() {
+      $(".project_spot").slideToggle("slow", function() {
         $(this).toggleClass("hidden");
       });
     });

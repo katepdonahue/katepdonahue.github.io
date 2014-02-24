@@ -92,3 +92,15 @@ li {
   display: none;
 }
 
+.project_spot {
+  width: 100%;
+}
+
+.project_spot img{
+  display: inline-block;
+  width: 45%;
+  height: 150px;
+  border: 1px solid black;
+}
+
+
