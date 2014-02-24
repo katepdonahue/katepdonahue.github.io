@@ -88,5 +88,7 @@ li {
   margin-right: 40px;
 }
 
-
+.hidden {
+  display: none;
+}
 
