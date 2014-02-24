@@ -34,6 +34,7 @@ p {
     -moz-border-radius: 40px 40px 40px 40px;
     -o-border-radius: 40px 40px 40px 40px;
     border-radius: 40px 40px 40px 40px;
+  position: relative;
 }
 
 .text {
@@ -76,16 +77,10 @@ li {
   float: right;
 }
 
-#nav1 {
-  float: right;
-  margin-top: 95px;
-  margin-right: 40px;
-}
-
-#nav2 {
-  float: right;
-  margin-top: 137px;
-  margin-right: 40px;
+#nav {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
 }
 
 .hidden {
