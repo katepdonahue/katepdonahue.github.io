@@ -21,7 +21,17 @@
 <script type="text/javascript">
   $(document).ready( function() {
     $("li").on("click", function() {
-      $(this).find("div").toggleClass("hidden");
+      var $div = $(this).find("div");
+      if($div.hasClass("hidden")) {
+        $div.slideDown("slow", function() {
+          $(this).removeClass("hidden");
+        });
+      }
+      else {
+        $div.slideUp("slow", function() {
+          $(this).addClass("hidden");
+        });
+      }
     });
   });
 </script>
