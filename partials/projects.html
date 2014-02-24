@@ -49,7 +49,7 @@
 <script type="text/javascript">
   $(document).ready( function() {
     $("li span").on("click", function() {
-      $(".project_spot").slideToggle("slow", function() {
+      $(this).parent().find(".project_spot").slideToggle("slow", function() {
         $(this).toggleClass("hidden");
       });
     });
