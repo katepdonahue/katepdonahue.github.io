@@ -37,7 +37,7 @@
       <li>
         <span>rock, paper, scissors</span>
         <div class="hidden project_spot">
-          <a href="http://rockpaperramon.herokuapp.com/" target="_blank"><img src="img/gol_fast_small.gif"/></a>
+          <a href="http://rockpaperstory.herokuapp.com/" target="_blank"><img src="img/gol_fast_small.gif"/></a>
           <a href="https://github.com/katepdonahue/Rock_Paper_Scissors" target="_blank"><img src="img/gol_code.png"/></a>
         </div>
       </li>
@@ -48,7 +48,12 @@
 </div>
 <script type="text/javascript">
   $(document).ready( function() {
-    $("li span").on("click", function() {
+    var $name = $("li span");
+    $name.on("click", function() {
+      var $this = $(this);
+      $name.not($this).parent().find(".project_spot").slideUp("slow", function() {
+        $(this).addClass("hidden");
+      });
       $(this).parent().find(".project_spot").slideToggle("slow", function() {
         $(this).toggleClass("hidden");
       });
